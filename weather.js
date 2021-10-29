@@ -161,7 +161,7 @@ document.querySelector("#search").append(error)
                            <h1 class="sub-head time">${localDate(unixForecast[0])} ${localTime(unixForecast[0])}</h1>
                            <p class="temp foretemp">${temp[0]}°C</p>
                            <p class="temp foretemp">${main[0]}-${des[0]}</p>
-                            <img src="icons/${icons[0]}.png" alt="weather-icon" class="for-icon">
+                            <img src="icon/${icons[0]}.png" alt="weather-icon" class="for-icon">
                             <p class="foretemp">Humidity: ${humid[0]}%</p>
                             <p class="foretemp">Visibility: ${vis[0]}km</p>
                             <p class="foretemp">Chance of Rain: ${pop[0]}%</p>
@@ -171,7 +171,7 @@ document.querySelector("#search").append(error)
                             <h1 class="sub-head time">${localDate(unixForecast[1])} ${localTime(unixForecast[1])}</h1>
                            <p class="temp foretemp">${temp[1]}°C</p>
                            <p class="temp foretemp">${main[1]}-${des[1]}</p>
-                            <img src="icons/${icons[1]}.png" alt="weather-icon" class="for-icon">
+                            <img src="icon/${icons[1]}.png" alt="weather-icon" class="for-icon">
                             <p class="foretemp">Humidity: ${humid[1]}%</p>
                             <p class="foretemp">Visibility: ${vis[1]}km</p>
                             <p class="foretemp">Chance of Rain: ${pop[1]}%</p>
@@ -180,7 +180,7 @@ document.querySelector("#search").append(error)
                               <h1 class="sub-head time">${localDate(unixForecast[2])} ${localTime(unixForecast[2])}</h1>
                            <p class="temp foretemp">${temp[2]}°C</p>
                            <p class="temp foretemp">${main[2]}-${des[2]}</p>
-                            <img src="icons/${icons[2]}.png" alt="weather-icon" class="for-icon">
+                            <img src="icon/${icons[2]}.png" alt="weather-icon" class="for-icon">
                             <p class="foretemp">Humidity: ${humid[2]}%</p>
                             <p class="foretemp">Visibility: ${vis[2]}km</p>
                             <p class="foretemp">Chance of Rain: ${pop[2]}%</p>
@@ -189,7 +189,7 @@ document.querySelector("#search").append(error)
                               <h1 class="sub-head time">${localDate(unixForecast[3])} ${localTime(unixForecast[3])}</h1>
                            <p class="temp foretemp">${temp[3]}°C </p>
                            <p class="temp foretemp">${main[3]}-${des[3]}</p>
-                            <img src="icons/${icons[3]}.png" alt="weather-icon" class="for-icon">
+                            <img src="icon/${icons[3]}.png" alt="weather-icon" class="for-icon">
                             <p class="foretemp">Humidity: ${humid[3]}%</p>
                             <p class="foretemp">Visibility: ${vis[3]}km</p>
                             <p class="foretemp">Chance of Rain: ${pop[3]}%</p>
@@ -198,7 +198,7 @@ document.querySelector("#search").append(error)
                               <h1 class="sub-head time">${localDate(unixForecast[4])} ${localTime(unixForecast[4])}</h1>
                            <p class="temp foretemp">${temp[4]}°C</p>
                            <p class="temp foretemp">${main[4]}-${des[4]}</p>
-                            <img src="icons/${icons[4]}.png" alt="weather-icon" class="for-icon">
+                            <img src="icon/${icons[4]}.png" alt="weather-icon" class="for-icon">
                             <p class="foretemp">Humidity: ${humid[4]}%</p>
                             <p class="foretemp">Visibility: ${vis[4]}km</p>
                             <p class="foretemp">Chance of Rain: ${pop[4]}%</p>
