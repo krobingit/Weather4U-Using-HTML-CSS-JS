@@ -53,14 +53,8 @@ function enter(event)
       return `${days[formattedDay]},${formattedDate}/${formattedMonth}`;
 
     }
+//get data from the server using async,await,fetch  and display it on the screen
 async function getData(city) {
-var error=document.createElement("h1")
-if (document.querySelector("#search").value === "")
-{
- error.innerText="No results found."
-document.querySelector("#search").append(error)
-
-}
   document.querySelector("#weather-details").innerHTML = ``;
     const response =
       await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
