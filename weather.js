@@ -123,7 +123,7 @@ document.querySelector("#search").append(error)
                          <div class="weather-description">
                           <h1 class="sub-head main">${weather_main}</h1>
                           <p class="sub-head">Description: ${titleCase(weather_des)}</p>
-                          <img src="icons/${icon}.png" alt="weather-icon" class="weather-icon">
+                          <img src="icon/${icon}.png" alt="weather-icon" class="weather-icon">
                          </div>
                        <div class="sunrise">
                           <div>
