@@ -4,3 +4,4 @@
 
 *Using async function and await fetch the server response of weather api 
 
+*API used here- OpenWeatherAPI 
