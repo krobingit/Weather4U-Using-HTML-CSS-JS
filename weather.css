@@ -74,6 +74,8 @@ width:22rem;
 }
 .weather-description{
 width:22rem;
+ display:flex;
+ flex-wrap:wrap;
 }
 .weather-description>*{
 margin-bottom: 2rem;
