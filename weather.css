@@ -170,8 +170,9 @@ margin-left: 1rem;
 justify-content: space-around;
 row-gap:3rem;
 column-gap: 2rem;
+ margin-bottom:2rem;
 }
-
+/*media queries*/
 @media (max-width:50rem)
 {
 
