@@ -202,17 +202,9 @@ async function getData(city) {
      </div>
 
 `
-
+document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x1200/?"+city+"')";
 
 }
-
-
-getData("New york");
-getData("Chennai");
-getData("Dubai");
-getData("Sydney");
-getData("Madrid");
-getData("Trichy");
 
 //toggling the forecast data with the button click using this function
 function toggleForecast(id) {
