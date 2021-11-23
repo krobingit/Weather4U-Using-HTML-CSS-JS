@@ -105,7 +105,7 @@ async function getData(city) {
   }
 
 
-  document.querySelector("#weather-details").innerHTML += `
+  document.querySelector("#weather-details").innerHTML = `
 <div class="weather">
               <div class="weather primary-container">
                            <div class="city-weather-details">
