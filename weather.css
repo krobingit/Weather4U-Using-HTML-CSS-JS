@@ -50,6 +50,7 @@ font-weight: bold;
 }
 #header-row input::placeholder{
  color:black;
+ font-size:1.7rem;
 }
 
 #header-row input:focus{
