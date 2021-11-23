@@ -3,8 +3,7 @@ font-size:10px;
 }
 
 body{
-/*background-image: url("https://wallpaperaccess.com/full/1668999.jpg");*/
-background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpmn0MgBvZfO5t-arvmrAmrxIM20okZtuBmQ&usqp=CAU");
+background-image: url('https://source.unsplash.com/1600x900/?landscape');
 background-size:cover;
 background-position: center;
 font-family: 'Poppins', sans-serif;
@@ -32,7 +31,7 @@ color:rgb(47, 3, 97);
 
 #header-row input{
  border:0;
-  border-bottom:1px solid #555;
+  border-bottom:2px solid darkgrey;
   background:transparent;
   width:75%;
   padding:8px 0 5px 0;
@@ -43,7 +42,7 @@ color:rgb(47, 3, 97);
 #header-row input:focus{
  border:none;
  outline:none;
- border-bottom:1px solid black;
+ border-bottom:2px solid black;
 }
 
 .search{
@@ -149,7 +148,7 @@ height:5rem;
 .primary-container{
 margin-bottom: 5rem;
 width:85%;
-background: rgba( 160, 134, 183, 0.05 );
+background: rgba( 241, 241, 241, 0.6 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
