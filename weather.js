@@ -1,6 +1,6 @@
 document.body.innerHTML=`<div class="container">
                <div class="row" id="header-row">
-                     <div class="col-md-6 col-sm-12">
+                     <div class="col-md-6 col-sm-12 title-bar">
                       <a onclick="window.location.reload()"><h1 class="title"><i class="fas fa-cloud-sun-rain"></i>Weather4U</h1></a>
                        <h2 class="sub-title">Get updates on current weather & forecast<h2>
                       </div>
