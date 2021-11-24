@@ -38,6 +38,8 @@ text-align: center;
  background: rgba( 241, 241, 241, 0.6 );
 border-radius: 1rem;
 margin-right: 2rem;
+ width:70%;
+padding:5px;
 }
 #header-row input{
  border:0;
@@ -192,7 +194,11 @@ column-gap: 2rem;
 /*media queries*/
 @media (max-width:50rem)
 {
-
+.title-bar{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 .weather{
 flex-direction: column;
 gap:1rem;
