@@ -35,6 +35,9 @@ font-family: 'Balsamiq Sans', cursive;
 font-size: 2rem;
 text-align: center;
  font-weight: bold;
+ background: rgba( 241, 241, 241, 0.6 );
+border-radius: 1rem;
+margin-right: 2rem;
 }
 #header-row input{
  border:0;
