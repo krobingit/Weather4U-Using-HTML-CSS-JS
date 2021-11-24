@@ -2,7 +2,7 @@ document.body.innerHTML=`<div class="container">
                <div class="row" id="header-row">
                      <div class="col-md-6 col-sm-12 title-bar">
                       <a onclick="window.location.reload()"><h1 class="title"><i class="fas fa-cloud-sun-rain"></i>Weather4U</h1></a>
-                       <h2 class="sub-title">Get updates on current weather and forecast<h2>
+                       <h2 class="sub-title">Get updates on weather and forecast<h2>
                       </div>
                        <div class="col-md-6 col-sm-12">
                  <input type="search" onkeyup="enter(event)" id="search" placeholder="Search a Location..">
