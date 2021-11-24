@@ -55,15 +55,23 @@ function enter(event)
 
     }
 //get data from the server using async,await,fetch  and display it on the screen
-async function getData(city) {
+async function getData(city,latitude,longitude) {
   document.querySelector("#weather-details").innerHTML = ``;
-    const response =
+  if (city===null)
+    var response =
+      await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
+  else
+  var response =
       await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
   const data = await response.json();
 
-  const forecast_response=await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
+  if (city === null)
+    var forecast_response =
+      await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
+  else
+    var forecast_response =
+      await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`);
   const forecast = await forecast_response.json();
-  console.log(forecast)
 
   //--------parameters to display current weather data
     const titleCase = (string) =>
@@ -203,8 +211,22 @@ async function getData(city) {
      </div>
 
 `
-document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x1200/?"+city+"')";
+  document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x1200/?"+city+"')";
 
+
+}
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+  getLocation();
+function showPosition(position) {
+  let lat=position.coords.latitude;
+  let lon=position.coords.longitude;
+  getData(null,lat,lon);
 }
 
 //toggling the forecast data with the button click using this function
