@@ -145,7 +145,7 @@ async function getData(city) {
                           </div>
                           </div>
                           <div>
-                          <button type="button" class="btn btn-outline-info btn-lg viewbtn btn${data.id}"
+                          <button type="button" class="btn btn-dark btn-lg viewbtn btn${data.id}"
                               onclick="toggleForecast(${data.id})">View 3-Hour Forecast
                                               </button>
                           </div>
