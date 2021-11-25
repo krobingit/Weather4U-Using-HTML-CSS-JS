@@ -8,4 +8,4 @@
 
 *responsive for mobile devices
 
-*detects your location based on your device gps and give you results for your current gps location.
+*detects your location based on your device gps and give you results for your current gps location automatically.
