@@ -247,5 +247,6 @@ color:#000000
  display:flex;
 justify-content:center;
  text-align:center;
+  background: rgba( 241, 241, 241, 0.6 );
 }
 
