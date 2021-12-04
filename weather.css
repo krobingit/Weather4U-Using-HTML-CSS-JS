@@ -243,7 +243,9 @@ font-size:2rem;
 color:#000000
 }
 .infoText{
- color:"darkmagenta";
- text-align:"center";
+ color:white;
+ display:flex;
+justify-content:center;
+ text-align:center;
 }
 
