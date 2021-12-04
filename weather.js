@@ -58,10 +58,10 @@ function enter(event)
 async function getData(city,latitude,longitude) {
   if(city="")
   {
-     document.querySelector("#weather-details").innerHTML =``
+     document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">You have not Entered Any Location</h1>`
      return;
   }
-  document.querySelector("#weather-details").innerHTML =`<h1>No results found</h1>`
+  document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">No results found</h1>`
 
   if (city===null)
     var response =
