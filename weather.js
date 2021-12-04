@@ -213,7 +213,7 @@ async function getData(city,latitude,longitude) {
 
 `
   document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x1200/?"+data.name+"')";
-  if(document.querySelector("#weather-details").innerHTML === "")
+  if(document.querySelector("#weather-details").innerHTML === "" && city)
     document.querySelector("#weather-details").innerHTML =`<h1>No results found</h1>`
 
 }
