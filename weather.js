@@ -59,7 +59,7 @@ async function getData(city,latitude,longitude) {
   
   if(city==="")
   {
-     document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">You have not Entered Any Location</h1>`
+     document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">-Type in a city name-</h1>`
      return;
   }
 
@@ -73,7 +73,7 @@ async function getData(city,latitude,longitude) {
   const data = await response.json();
     if(data.cod=="404")
     {
-      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">${data.message}</h1>`
+      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">-No results found-</h1>`
       console.log(data.cod,data.message)
      return; 
     }
