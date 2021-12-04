@@ -70,10 +70,13 @@ async function getData(city,latitude,longitude) {
   else
   var response =
       await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
-  if(!response)
-      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">No results found</h1>`
+
   const data = await response.json();
-  
+    if(data.code==="404")
+    {
+      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">${data.message}</h1>`
+     return; 
+    }
   if (city === null)
     var forecast_response =
       await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
