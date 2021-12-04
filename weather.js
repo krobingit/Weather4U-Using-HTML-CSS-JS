@@ -56,7 +56,7 @@ function enter(event)
     }
 //get data from the server using async,await,fetch  and display it on the screen
 async function getData(city,latitude,longitude) {
- // document.querySelector("#weather-details").innerHTML = ``;
+  document.querySelector("#weather-details").innerHTML =`<h1>No results found</h1>`
 
   if (city===null)
     var response =
@@ -213,9 +213,6 @@ async function getData(city,latitude,longitude) {
 
 `
   document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x1200/?"+data.name+"')";
-  if(document.querySelector("#weather-details").innerHTML === "" && city)
-    document.querySelector("#weather-details").innerHTML =`<h1>No results found</h1>`
-
 }
 function getLocation() {
   if (navigator.geolocation) {
