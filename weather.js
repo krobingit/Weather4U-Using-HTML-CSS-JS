@@ -62,7 +62,6 @@ async function getData(city,latitude,longitude) {
      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">You have not Entered Any Location</h1>`
      return;
   }
-  document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">No results found</h1>`
 
   if (city===null)
     var response =
@@ -72,9 +71,10 @@ async function getData(city,latitude,longitude) {
       await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
 
   const data = await response.json();
-    if(data.code==="404")
+    if(data.cod=="404")
     {
       document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">${data.message}</h1>`
+      console.log(data.cod,data.message)
      return; 
     }
   if (city === null)
