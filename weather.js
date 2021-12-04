@@ -62,7 +62,7 @@ async function getData(city,latitude,longitude) {
      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">-Type in a city name-</h1>`
      return;
   }
-document.querySelector("#weather-details").innerHTML =`<div class="loader"><span class="loading">Loading...</span><div></div><div></div><div></div><div></div></div>`
+document.querySelector("#weather-details").innerHTML =`<div class="loader"><h1 class="loading">Loading...</h1><div></div><div></div><div></div><div></div></div>`
   if (city===null)
     var response =
       await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
