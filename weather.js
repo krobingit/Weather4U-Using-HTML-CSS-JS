@@ -56,13 +56,14 @@ function enter(event)
     }
 //get data from the server using async,await,fetch  and display it on the screen
 async function getData(city,latitude,longitude) {
+  /*
   if(city="")
   {
      document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">You have not Entered Any Location</h1>`
      return;
   }
   document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">No results found</h1>`
-
+*/
   if (city===null)
     var response =
       await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
