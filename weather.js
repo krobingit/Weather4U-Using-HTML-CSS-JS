@@ -56,6 +56,11 @@ function enter(event)
     }
 //get data from the server using async,await,fetch  and display it on the screen
 async function getData(city,latitude,longitude) {
+  if(city="")
+  {
+     document.querySelector("#weather-details").innerHTML =``
+     return;
+  }
   document.querySelector("#weather-details").innerHTML =`<h1>No results found</h1>`
 
   if (city===null)
