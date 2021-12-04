@@ -67,16 +67,9 @@ async function getData(city,latitude,longitude) {
   if (city===null)
     var response =
       await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
-  else{
-    try{
+  else
   var response =
-      await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)}
-    catch(err)
-    {
-      console.log("Error",err);
-    }
-  
-  }
+      await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c06dc9f82bcf0aeb3e875a71cb3f56a8&units=metric`)
   const data = await response.json();
   
   if (city === null)
@@ -226,6 +219,8 @@ async function getData(city,latitude,longitude) {
 
 `
   document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x1200/?"+data.name+"')";
+  if( document.querySelector("#weather-details").innerHTML ===`` && city)
+    document.querySelector("#weather-details").innerHTML =`<h1 class="infoText">No results found</h1>`
 }
 function getLocation() {
   if (navigator.geolocation) {
